@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/tv_view_info"
+        android:layout_height="wrap_content"
+        style="@style/CommonButtonStyle"
+        />
+
+    <Button
+        android:onClick="resetText"
+        android:text="restText"
+        style="@style/CommonButtonStyle"
+        />
+
+    <Button
+        android:onClick="viewRect"
+        android:text="test View rect"
+        style="@style/CommonButtonStyle"
+        />
+
+    <Button
+        android:onClick="touchSlop"
+        android:text="show touch slop"
+        style="@style/CommonButtonStyle"
+        />
+
+    <Button
+        android:onClick="showCustomView"
+        android:text="show touch slop"
+        style="@style/CommonButtonStyle"
+        />
+
+    <com.demo.learndemos.ui.view.GestureDemoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+      <requestFocus/>
+    </LinearLayout>
+
+    <com.demo.learndemos.ui.view.ClearInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <Button
+        android:onClick="goTestClick"
+        android:text="测试点击事件"
+        style="@style/CommonButtonStyle"
+        />
+  </LinearLayout>
+</ScrollView>
